@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STUKASA | Personal Website</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:url("background.png") center/cover no-repeat fixed;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(3px);
+z-index:0;
+}
+
+.card{
+position:relative;
+z-index:1;
+width:90%;
+max-width:700px;
+padding:40px;
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 0 30px rgba(0,229,255,.4);
+color:white;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.profile{
+width:140px;
+height:140px;
+margin:auto;
+border-radius:50%;
+overflow:hidden;
+border:4px solid #00e5ff;
+box-shadow:0 0 20px #00e5ff;
+}
+
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1{
+text-align:center;
+margin-top:20px;
+font-size:40px;
+}
+
+h3{
+text-align:center;
+color:#00e5ff;
+margin-top:5px;
+}
+
+.username{
+text-align:center;
+color:#9befff;
+margin:10px 0 25px;
+font-size:15px;
+}
+
+p{
+text-align:center;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.social{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.btn{
+text-decoration:none;
+background:#00e5ff;
+color:black;
+padding:14px 28px;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 0 15px rgba(0,229,255,.6);
+}
+
+.btn:hover{
+background:#008cff;
+color:white;
+transform:translateY(-5px);
+box-shadow:0 0 25px #00e5ff;
+}
+
+footer{
+margin-top:30px;
+text-align:center;
+font-size:13px;
+color:#ccc;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="profile">
+<img src="profile.jpg" alt="Profile">
+</div>
+
+<h1>STUKASA</h1>
+<h3>Known As DIMAS</h3>
+
+<div class="username">
+@stukasa_mizugaki
+</div>
+
+<p>
+Halo! Selamat datang di website pribadi saya.
+Saya menyukai dunia teknologi, desain grafis,
+coding, editing, dan game.
+</p>
+
+<p>
+Website ini dibuat sebagai tempat memperkenalkan diri,
+berbagi karya, dan menghubungkan teman-teman ke media sosial saya.
+</p>
+
+<div class="social">
+
+<a class="btn"
+href="https://tiktok.com/@stukasa_mizugaki"
+target="_blank">
+🎵 TikTok
+</a>
+
+<a class="btn"
+href="https://youtube.com/@stukasa.official?si=rD4VI7rXSemqFxGl"
+target="_blank">
+▶️ YouTube
+</a>
+
+</div>
+
+<footer>
+© 2026 STUKASA OFFICIAL
+</footer>
+
+</div>
+
+</body>
+</html>
